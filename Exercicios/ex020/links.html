@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :: = pseudo-element
+            >  = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a.visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { /*fica amarelo quando clicado*/
+            color: yellow;
+        }
+        /*':' pseudo elemento*/
+        a::after { /*after=depois*/
+            content: ' [link]';
+            font-weight: normal;
+            color: lightgrey;
+        }
+        .especial {
+            background-color: lightcoral;
+            width: 300px;
+        }
+
+        .especial::before {/*before=antes*/
+            content: ' > ';
+            color: red;
+        }
+
+        .especial::after {
+            content: ' < ';
+            color: red;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>Personalizando links</h1><!--target="_blank" para abrir em outra guia-->
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li class="especial"><a href="https://youtebe.com/cursoemvideo/">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em Video</a></li>
+    </ul>
+    <div id="caixa"><a href="pseudoclass.html"><button type="button">hora</button></a></div>
+    
+</body>
+</html>

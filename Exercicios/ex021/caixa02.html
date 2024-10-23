@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+        article {
+            background-color: white;
+            margin: 10px;
+        }
+        article > aside {
+            background-color: rgb(122, 128, 134);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 4px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        nav {
+            background-color: rgb(92, 91, 91);
+            padding: 3px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main#hover {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px; 
+            
+        }
+        article {
+            background-color: lightgray;
+            padding: 4px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px;
+
+        }
+
+        div#bola {
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 50%;
+            
+
+        }
+
+        div#bola > p {
+            text-align: center;
+            margin: 10px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="caixa01.html">link</a>
+            <a href="caixa01.html">link</a>
+            <a href="caixa01.html">link</a>
+            <a href="caixa01.html">link</a>
+            <a href="caixa01.html">link </a>
+        </nav>
+    </header><!--cabeçalho-->
+    <main><!--menu-->
+        <section id="assusntos"><!--sessão-->
+        </section>
+        <section id="noticias"></section>
+        <article><!--artigo-->
+            <h2>Noticias sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi obcaecati nobis ducimus magnam officiis voluptate perspiciatis suscipit natus sapiente doloribus fugiat sequi, facilis cumque voluptas accusamus consequatur cum. Nemo.</p>
+            <aside>
+                <p>Artigo escrito por José da Silva</p>
+            </aside>
+        </article>
+            <footer>
+                <p>Densenvolvido por Curso em Video</p>
+            </footer><!--rodapé-->
+        <div id="bola"><p>Rodrigo</p></div>
+    </main>
+</body>
+</html>

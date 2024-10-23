@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            background-color: lightgray;
+            color: aqua;
+            font: bolder 20px "Arial", "sans-serif";
+        }
+
+        div > p { /*paragrafo que está dentro da div*/
+            display: none; /*comando para sumir */
+        }
+        div:hover > p {
+            display: block;/* para mostrar*/
+            color: greenyellow;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>texto escondido</p>
+    </div>
+    <footer>
+        <p>&copy;CursoemVideo</p>
+    </footer>
+    <script>src="script.js"</script>
+    
+</body>
+</html>
