@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de inframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, ut! Omnis eius animi, sed doloremque minus rem reiciendis ipsam assumenda aliquid molestias voluptatem asperiores, sint optio ullam cumque! Saepe, necessitatibus.</p>
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira pagina</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda pagina</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira pagina</a></li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla necessitatibus id quas cumque obcaecati saepe incidunt quasi et quibusdam corporis assumenda magnam, sit at error, recusandae voluptate repellat rerum quo.
+    </p>
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>"></iframe>
+    <p>Infelizmente seu navegador não é compatível</p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quaerat delectus odio aliquam ullam eveniet, debitis voluptate deleniti saepe tempora animi enim sequi recusandae, culpa laboriosam expedita! Dolorum, dicta excepturi?
+    </p>
+</body>
+</html>
